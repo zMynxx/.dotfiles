@@ -36,6 +36,6 @@ link *FILE:
   stow --target $HOME -v {{FILE}}
 
 # Create a symlink for a given the 
-link *FOLDER:
+linkd *FOLDER:
   @echo "Configuring folders..."
   stow --dir={{FOLDER}}
