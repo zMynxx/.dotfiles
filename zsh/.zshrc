@@ -6,6 +6,10 @@ autoload -Uz compinit
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Set the TERM variable
+export TERM=xterm-color
+
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -140,3 +144,7 @@ compdef _argocd argocd
 ## Kubeon / Kubeoff - Kubernetes context + ns combo
 PROMPT='$(kube_ps1)'$PROMPT
 export SOPS_AGE_KEY_FILE="$HOME/.age/key.txt"
+
+
+## NeoVim
+alias vim='nvim'
